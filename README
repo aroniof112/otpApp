@@ -1,0 +1,17 @@
+Aplicația este realizată folosind ASP.NET Web API. Aceasta este organizată în mai multe foldere pentru a opține scalabilitate și mentenabilitate.
+
+Folderul "Entities" conține modelul de clasă, în cazul meu clasa User.
+Folderul "Data" conține clasa "UserRepository" care generează o listă de useri.
+Folderul "Interfaces" conține toate interfețele, cele pentru servicii dar si pentru reposiotry.
+Folderul "Services" conține partea de busniess logic. Aici generez parola unica care este valabila 30s, dar și verific dacă această parolă este valabilă.
+          Aceștia sunt pașii pentru a genera parola unică:
+                  *Obțin parola utilizatorului și ultima oră generată dintr-un fișier. Dacă acestea nu există voi inițializa proprietățile cu valori default. 
+                  *Verific dacă utilizatorul cu userId dat există în lista de utilizatori. Dacă nu este găsit, se returnează mesajul "User not found
+                  *Obțin parola criptată și ultima oră generată din obiectul JSON.
+                  *Verific dacă parola curentă este încă valabilă comparând parola criptată, diferența de timp dintre ora curentă și ultima oră generată și ID-ul utilizatorului. 
+                    Dacă este valabilă, se returnează parola modificată. Dacă nu se merge mai departe.
+                  *Genereaz o nouă parolă prin concatenarea ID-ului utilizatorului cu ora curentă formatată ca "ddMMyyyymmss". Iar această concatenare se criptează.
+                  *Actualizez user-ul curent cu noua parolă criptată și cu ultima oră generată. Serializez obiectul userRepo actualizat în JSON.
+                  *Salvez reprezentarea JSON a obiectului utilizator într-un fișier. Actualizez ultima oră generată în obiectul "user repository". Returnez parola criptată nou generată.
+
+Iar în ultimul folder "Controllers" apelez aceste metode din servicii, aici utilizez un endpoint HTTP GET pentru a obține parola unică.
