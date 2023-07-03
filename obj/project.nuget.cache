@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Eu2ZbPZc4i/1wP6MMVmV02wRTD58/8z8bpP9rX1P2TBPtxSN2L+7y7tVR3NyNEpZOo5ewTHwVvjT/2DUnNYhZw==",
+  "dgSpecHash": "cy6BwOFLlkKTN3R706KVVnyfNcieLDNguqu/+j0o4yfjkXUBPkGin7LcI/a2HccrdhnFhoQgCYU63tY7Hq01dQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anto\\Documents\\OTPApplication\\OTPApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Anto\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\Anto\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Anto\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\Anto\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Anto\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Anto\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Anto\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Anto\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Anto\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
